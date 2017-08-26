@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -12,4 +14,8 @@ func main() {
 	for i := 0; i <= 2000; i++ {
 		fmt.Printf("%x %b %d %q \n", i, i, i, i)
 	}
+
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+
 }
